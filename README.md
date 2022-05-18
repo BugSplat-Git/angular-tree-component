@@ -4,16 +4,18 @@
 
 # angular tree component
 
+_Note: this repo has been forked and upgraded to Angular 13 by [BugSplat](https://www.bugsplat.com) and a [pull request](https://github.com/CirclonGroup/angular-tree-component/pull/942) has been opened in the original repo._
+
 ## Getting started
 
 Install `angular-tree-component`:
 
-```npm install @circlon/angular-tree-component```
+```npm install @bugsplat/angular-tree-component```
 
 Import `TreeModule`:
 
 ```
-import { TreeModule } from '@circlon/angular-tree-component';
+import { TreeModule } from '@bugsplat/angular-tree-component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,10 +28,11 @@ export class AppModule {}
 Add css to `styles.scss` or include in `angular.json`:
 
 ```
-@import '~@circlon/angular-tree-component/css/angular-tree-component.css';
+@import '~@bugsplat/angular-tree-component/css/angular-tree-component.css';
 ```
 
 ## Docs, Demos & More
+
 We are redoing the documentation. You can find the new documentation here:
 [https://circlongroup.github.io/angular-tree-component/](https://circlongroup.github.io/angular-tree-component/)
 
@@ -63,4 +66,4 @@ Please check the issues / project before starting to work on a feature / bug to 
 ## Contributors
 
 This project exists thanks to all the people who contribute.
-<a href="https://github.com/CirclonGroup/angular-tree-component/graphs/contributors"><img src="https://opencollective.com/angular-tree-component/contributors.svg?width=890&button=false" /></a>
+<a href="https://github.com/BugSplat-Git/angular-tree-component/graphs/contributors"><img src="https://opencollective.com/angular-tree-component/contributors.svg?width=890&button=false" /></a>

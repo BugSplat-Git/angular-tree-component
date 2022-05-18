@@ -1,9 +1,9 @@
 {
-  "name": "@circlon/angular-tree-component",
-  "version": "11.0.4",
+  "name": "@bugsplat/angular-tree-component",
+  "version": "13.0.0",
   "description": "A simple yet powerful tree component for Angular2",
   "author": "Circlon Group <os-group@circlon.de>",
-  "homepage": "https://github.com/CirclonGroup/angular-tree-component",
+  "homepage": "https://github.com/BugSplat-Git/angular-tree-component",
   "license": "MIT",
   "keywords": [
     "ng",
@@ -56,9 +56,10 @@
   "files": [
     "dist/"
   ],
-  "readme": "https://github.com/CirclonGroup/angular-tree-component/blob/master/README.md",
+  "readme": "https://github.com/BugSplat-Git/angular-tree-component/blob/master/README.md",
   "contributors": [
-    "Adam Klein <adam@500tech.com>"
+    "Adam Klein <adam@500tech.com>",
+    "Bobby Galli <bobbyg603@gmail.com>"
   ],
   "dependencies": {
     "@angular/animations": "^18.1.1",
@@ -118,9 +119,9 @@
     "uuid": "^8.2.0",
     "zone.js": "^0.14.7"
   },
-  "repository": "https://github.com/CirclonGroup/angular-tree-component.git",
+  "repository": "https://github.com/BugSplat-Git/angular-tree-component.git",
   "bugs": {
-    "url": "https://github.com/CirclonGroup/angular-tree-component/issues"
+    "url": "https://github.com/BugSplat-Git/angular-tree-component/issues"
   },
   "engines": {
     "node": ">=18"
