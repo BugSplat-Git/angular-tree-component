@@ -50,7 +50,7 @@
     "test:debug": "testcafe chrome e2e/*.testcafe.js --inspect-brk",
     "test:slow": "testcafe chrome e2e/*.testcafe.js --speed 0.1",
     "e2e:tsc": "../node_modules/.bin/tsc --p e2e/tsconfig.json",
-    "publish:release": "npm publish ./dist/angular-tree-component",
+    "publish:release": "npm publish ./dist/angular-tree-component --access public",
     "publish:next": "npm publish ./dist/angular-tree-component --tag next"
   },
   "files": [
@@ -67,7 +67,8 @@
     "@angular/forms": "^18.1.1",
     "@angular/material": "^18.1.1",
     "core-js": "^3.22.5",
-    "mobx": "~4.14.1"
+    "mobx": "~4.14.1",
+    "tslib": "^2.3.0"
   },
   "devDependencies": {
     "@angular-devkit/architect": "^0.1801.1",
