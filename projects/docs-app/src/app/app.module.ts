@@ -7,7 +7,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { GettingStartedComponent } from './getting-started/getting-started.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CustomElementsModule } from './custom-elements/custom-elements.module';
@@ -19,27 +19,20 @@ import { LayoutModule } from './layout/layout.module';
 import { SharedModule } from './shared/shared.module';
 import { GuidesModule } from './guides/guides.module';
 
-@NgModule({
-  declarations: [AppComponent, GettingStartedComponent],
-  imports: [
-    SharedModule,
-    BrowserModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatSidenavModule,
-    MatButtonModule,
-    AppRoutingModule,
-    CustomElementsModule,
-    LayoutModule,
-    CodeExampleModule,
-    ExamplesModule,
-    TreeModule,
-    FundamentalsModule,
-    GuidesModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [AppComponent, GettingStartedComponent],
+    bootstrap: [AppComponent], imports: [SharedModule,
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatSidenavModule,
+        MatButtonModule,
+        AppRoutingModule,
+        CustomElementsModule,
+        LayoutModule,
+        CodeExampleModule,
+        ExamplesModule,
+        TreeModule,
+        FundamentalsModule,
+        GuidesModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule {}
