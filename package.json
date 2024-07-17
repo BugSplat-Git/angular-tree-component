@@ -107,7 +107,7 @@
     "karma-jasmine-html-reporter": "^1.5.0",
     "lint-staged": "^10.0.7",
     "ng-packagr": "^18.1.0",
-    "nightwatch": "^0.9.21",
+    "nightwatch": "^3.7.0",
     "prettier": "^1.19.1",
     "rimraf": "^2.5.1",
     "rxjs": "^6.5.3",
@@ -123,7 +123,7 @@
     "url": "https://github.com/CirclonGroup/angular-tree-component/issues"
   },
   "engines": {
-    "node": ">=10.21.0"
+    "node": ">=18"
   },
   "prettier": {
     "printWidth": 80,
