@@ -4,7 +4,7 @@
   "homepage": "https://github.com/BugSplat-Git/angular-tree-component",
   "description": "A simple yet powerful tree component for Angular2",
   "license": "MIT",
-  "version": "13.0.1",
+  "version": "18.0.0",
   "repository": "https://github.com/BugSplat-Git/angular-tree-component.git",
   "bugs": {
     "url": "https://github.com/BugSplat-Git/angular-tree-component/issues"
