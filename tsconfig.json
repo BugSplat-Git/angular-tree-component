@@ -3,7 +3,7 @@
     "baseUrl": ".",
     "module": "es2020",
     "moduleResolution": "node",
-    "target": "es2015",
+    "target": "es2020",
     "outDir": "/dist/out-tsc",
     "allowSyntheticDefaultImports": true,
     "emitDecoratorMetadata": true,
