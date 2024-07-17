@@ -62,7 +62,7 @@
   ],
   "dependencies": {
     "@angular/animations": "^17.3.12",
-    "@angular/cdk": "^16.2.14",
+    "@angular/cdk": "^17.3.10",
     "@angular/forms": "^17.3.12",
     "@angular/material": "^16.2.14",
     "core-js": "^3.22.5",
