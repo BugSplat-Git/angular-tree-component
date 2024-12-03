@@ -36,7 +36,7 @@
     "clean:dist": "rimraf dist",
     "copy:files": "cp ./README.md ./dist/angular-tree-component && cp ./LICENSE ./dist/angular-tree-component && cp ./projects/angular-tree-component/src/lib/angular-tree-component.css ./dist/angular-tree-component/css/",
     "copy:files:win": "copy README.md .\\dist\\angular-tree-component && copy LICENSE .\\dist\\angular-tree-component && xcopy .\\projects\\angular-tree-component\\src\\lib\\angular-tree-component.css .\\dist\\angular-tree-component\\css\\",
-    "doc": "typedoc --module commonjs --out doc lib/defs/api.ts",
+    "doc": "typedoc --out doc projects/angular-tree-component/src/lib/defs/api.ts",
     "clean:all": "npm run clean:dist && rimraf node_modules && npm cache clean",
     "lint": "npx eslint",
     "prepublish:lib:win": "npm run build:lib && npm run copy:files:win",
@@ -113,7 +113,7 @@
     "rxjs": "^6.5.3",
     "testcafe": "^3.6.2",
     "tslib": "^2.4.0",
-    "typedoc": "^0.26.4",
+    "typedoc": "^0.27.2",
     "typescript": "~5.4.5",
     "uuid": "^8.2.0",
     "zone.js": "^0.14.7"
