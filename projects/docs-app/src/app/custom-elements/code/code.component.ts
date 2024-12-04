@@ -27,8 +27,8 @@ import { MatSnackBar } from '@angular/material/snack-bar';
  * Renders code provided through the `updateCode` method.
  */
 @Component({
-  selector: 'aio-code',
-  template: `
+    selector: 'aio-code',
+    template: `
     <pre class="prettyprint lang-{{language}}">
       <button *ngIf="!hideCopy" class="material-icons copy-button no-print"
         title="Copy code snippet"
@@ -38,7 +38,8 @@ import { MatSnackBar } from '@angular/material/snack-bar';
       </button>
       <code class="animated fadeIn" #codeContainer></code>
     </pre>
-    `
+    `,
+    standalone: false
 })
 export class CodeComponent implements OnChanges {
   ariaLabel = '';
