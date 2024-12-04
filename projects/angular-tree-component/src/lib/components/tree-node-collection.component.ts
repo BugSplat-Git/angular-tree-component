@@ -5,9 +5,9 @@ import { TreeVirtualScroll } from "../models/tree-virtual-scroll.model";
 import { TreeModel } from "../models/tree.model";
 
 @Component({
-  selector: 'tree-node-collection',
-  encapsulation: ViewEncapsulation.None,
-  template: `
+    selector: 'tree-node-collection',
+    encapsulation: ViewEncapsulation.None,
+    template: `
     <ng-container *treeMobxAutorun="{ dontDetach: true }">
       <div [style.margin-top]="marginTop">
         <tree-node
@@ -19,7 +19,8 @@ import { TreeModel } from "../models/tree.model";
         </tree-node>
       </div>
     </ng-container>
-  `
+  `,
+    standalone: false
 })
 export class TreeNodeCollectionComponent implements OnInit, OnDestroy {
   @Input()
@@ -91,10 +92,10 @@ export class TreeNodeCollectionComponent implements OnInit, OnDestroy {
 }
 
 @Component({
-  selector: 'tree-node-children',
-  encapsulation: ViewEncapsulation.None,
-  styles: [],
-  template: `
+    selector: 'tree-node-children',
+    encapsulation: ViewEncapsulation.None,
+    styles: [],
+    template: `
     <ng-container *treeMobxAutorun="{ dontDetach: true }">
       <div
         [class.tree-children]="true"
@@ -122,7 +123,8 @@ export class TreeNodeCollectionComponent implements OnInit, OnDestroy {
         ></tree-loading-component>
       </div>
     </ng-container>
-  `
+  `,
+    standalone: false
 })
 export class TreeNodeChildrenComponent {
   @Input() node: TreeNode;
@@ -130,10 +132,10 @@ export class TreeNodeChildrenComponent {
 }
 
 @Component({
-  selector: 'TreeNode, tree-node',
-  encapsulation: ViewEncapsulation.None,
-  styles: [],
-  template: `
+    selector: 'TreeNode, tree-node',
+    encapsulation: ViewEncapsulation.None,
+    styles: [],
+    template: `
     <ng-container *treeMobxAutorun="{ dontDetach: true }">
       <div
         *ngIf="!templates.treeNodeFullTemplate"
@@ -177,7 +179,8 @@ export class TreeNodeChildrenComponent {
       >
       </ng-container>
     </ng-container>
-  `
+  `,
+    standalone: false
 })
 export class TreeNodeComponent {
   @Input() node: TreeNode;
